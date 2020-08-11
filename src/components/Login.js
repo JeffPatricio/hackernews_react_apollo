@@ -59,6 +59,7 @@ class Login extends Component {
             mutation={login ? LOGIN_MUTATION : SIGNUP_MUTATION}
             variables={{ email, password, name }}
             onCompleted={data => this._confirm(data)}
+            onError={()=>alert('Error')}
           >
             {mutation => (
               <div className="pointer mr2 button" onClick={mutation}>
