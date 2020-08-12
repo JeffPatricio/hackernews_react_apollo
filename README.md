@@ -23,7 +23,7 @@ The project was developed using the following technologies:
 <b>This project requires the graphql api located in the repository:</b>
 
 - `$ git clone https://github.com/JeffPatricio/hackernews_graphql`
-- 
+
 <b>Cloning the frontend repository:</b>
 
 - `$ git clone https://github.com/JeffPatricio/hackernews_react_apollo.git`
