@@ -40,7 +40,7 @@ The project was developed using the following technologies:
 
 ## Feed Screen
 
-![Geekplant](docs/news.png)
+![Hacker News](docs/news.png)
 
 ## References
 
