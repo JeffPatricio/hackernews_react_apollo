@@ -26,7 +26,7 @@ The project was developed using the following technologies:
 - 
 <b>Cloning the frontend repository:</b>
 
-- `$ git clone https://github.com/JeffPatricio/hackernews_graphql.git`
+- `$ git clone https://github.com/JeffPatricio/hackernews_react_apollo.git`
 
 <b>Download the dependences:</b>
 
