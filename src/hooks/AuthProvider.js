@@ -10,13 +10,16 @@ const AuthProvider = ({ children }) => {
     return {};
   });
 
-  const [authToken] = useState(() => {
+  const [authToken, setAuthToken] = useState(() => {
     const tokenStorage = localStorage.getItem('@hackernews:token');
     return tokenStorage;
   });
 
-  const signIn = useCallback(() => {
-
+  const signIn = useCallback(({ user, token }) => {
+    setUser(user);
+    setAuthToken(token);
+    localStorage.setItem('@hackernews:user', JSON.stringify(user));
+    localStorage.setItem('@hackernews:token', token);
   }, []);
 
   const signOut = useCallback(() => {

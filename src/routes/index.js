@@ -1,13 +1,9 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-
-import CreateLink from '../components/CreateLink'
-import LinkList from '../components/LinkList'
-import Login from '../components/Login'
-import Search from '../components/Search'
-
-
 import News from '../pages/News';
+import Search from '../pages/Search';
+import Login from '../pages/Login';
+import CreateLink from '../pages/CreateLink';
 
 const Routes = () => {
   return (

@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../../components/Header';
-import LinkList from '../../components/LinkList/';
+import LinkList from '../../components/LinkList';
 import { Container } from './styles';
 
 const News = (props) => {
   return (
     <Container>
-      <Header />
+      <Header {...props} />
       <LinkList {...props} />
     </Container>
   );

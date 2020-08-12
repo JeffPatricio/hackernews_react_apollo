@@ -4,7 +4,7 @@ import { LINKS_PER_PAGE } from '../../config';
 import { FEED_QUERY } from '../../graphql/queries';
 import { NEW_LINKS_SUBSCRIPTION, NEW_VOTES_SUBSCRIPTION } from '../../graphql/subscriptions';
 import Link from '../Link';
-import { Container } from './styles';
+import { Container, ContainerNav, ItemNav } from './styles';
 
 const LinkList = ({ location, match, history }) => {
 
@@ -104,14 +104,14 @@ const LinkList = ({ location, match, history }) => {
             }
             {
               isNewPage &&
-              <div className="flex ml4 mv3 gray">
-                <div className="pointer mr2" onClick={previousPage}>
+              <ContainerNav>
+                <ItemNav onClick={previousPage}>
                   Previous
-                  </div>
-                <div className="pointer" onClick={() => nextPage(data)}>
+                  </ItemNav>
+                <ItemNav onClick={() => nextPage(data)}>
                   Next
-                  </div>
-              </div>
+                </ItemNav>
+              </ContainerNav>
             }
           </Container>
         )

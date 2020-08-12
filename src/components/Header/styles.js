@@ -18,17 +18,17 @@ export const ContainerNavigation = styled.div`
   display: flex;
   flex: 1;
   align-items: center;
+`;
 
-  h4{
-    margin-right: 10px;
-    cursor: pointer;
-  }
+export const Title = styled.h4`
+  margin-right: 10px;
+  cursor: pointer;
+`;
 
-  img{
-    border: 1px solid #FFF;
-    margin-right: 10px;
-    cursor: pointer;
-  }
+export const Logo = styled.img`
+  border: 1px solid #FFF;
+  margin-right: 10px;
+  cursor: pointer;
 `;
 
 export const ContainerLogin = styled.div`
